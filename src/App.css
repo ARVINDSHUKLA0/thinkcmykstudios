@@ -1,0 +1,117 @@
+.active-body{
+    background-color: rgba(128, 128, 128, 0.709);
+}
+.navbar {
+ 
+  transition: all 0.7s ease;
+  width: 100%;  
+  position: relative; 
+  left: 0; 
+  top: 0;  
+}
+.pointer-cursor{
+  cursor: pointer;
+}
+
+ 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;  
+  
+}
+
+.aidewrap{
+    width: 30%;
+}
+.asidebaropen {
+    right: 0;
+    background-color: #FFFFFF;
+    transition: .4s ease;
+    z-index: 88;
+}
+.asidebarclosed {
+    right: -100%;
+    transition: .18s all ease-in-out;
+    z-index: 78;
+    
+}
+ 
+.remove-bars{
+    padding-right: 10px;
+}
+
+.list-weight{
+    font-weight: 600;
+}
+.slider-container {
+    width: 100%;
+    height: 100vh;  
+    overflow: scroll;  
+    scrollbar-width: none;
+
+  }
+  
+  .img-container {
+    width: 100%;
+    height: 100vh;  
+  }
+  
+  .img-banner {
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover;  
+    
+  }
+  ul.slick-dots-active{
+    position: absolute;
+    bottom: 20px;
+    z-index: 55;
+  }
+
+  .slick-dots li {
+    position: absolute;
+    bottom: 40px;
+    z-index: 55;
+    color: white;
+  }
+  .slick-dots li.slick-active button {
+    background-color: white;
+    border-radius: 50%;
+  }
+ 
+  @media (min-width: 0px) and (max-width: 525px) {
+    .logo-set{
+        position: relative;
+       left: -5%;
+    }
+    .aidewrap{
+        width: 90%;
+    }
+    .list-padding{
+      position: relative;
+      left: 30px;
+   }
+    
+    
+  }
+  
+  @media (min-width: 526px) and (max-width: 1023px) {
+    .logo-set{
+        position: relative;
+        left: -16%;
+    }
+    .aidewrap{
+        width: 70%;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .xmark-list{
+      position: relative;
+       right: 18px;
+    }
+  }
